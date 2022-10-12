@@ -1,0 +1,87 @@
+mecab-ipadic (2.7.0-20070801+main-3) unstable; urgency=medium
+
+  * Team upload.
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * debian/control
+    - Use secure URI in Homepage field.
+    - Set debhelper-compat version in Build-Depends.
+    - Set debhelper-compat (= 13)
+    - Set Standards-Version: 4.5.0
+  * Add debian/salsa-ci.yml and drop debian/.gitlab-ci.yml
+
+ -- Hideki Yamane <henrich@debian.org>  Mon, 18 May 2020 20:51:10 +0900
+
+mecab-ipadic (2.7.0-20070801+main-2.1) unstable; urgency=medium
+
+  * d/p/0001-new-Japanese-era-reiwa-entry.patch: Reiwa entry
+
+ -- NOKUBI Takatsugu <knok@daionet.gr.jp>  Sat, 20 Apr 2019 16:58:21 +0900
+
+mecab-ipadic (2.7.0-20070801+main-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control
+    - set Build-Depends: debhelper (>= 11)
+    - update Maintainer: <team+pkg-nlp-ja@tracker.debian.org>
+    - update Vcs-*
+    - update Homepage: field
+    - update Priority: optional
+    - set Standards-Version: 4.1.4
+  * debian/compat
+    - set 11
+  * debian/rules
+    - separate to debian/clean
+  * debian/watch
+    - drop it, since upstream provides tarball via Google Drive
+  * debian/copyright
+    - not DEP5, but copyright-format 1.0
+    - Ad BSD-3-Clause term since it's not equal to -with-ICOT-term
+
+ -- Hideki Yamane <henrich@debian.org>  Sun, 20 May 2018 13:08:23 +0900
+
+mecab-ipadic (2.7.0-20070801+main-1) unstable; urgency=low
+
+  * Move to main with new tarball. Closes: #650418
+  * Repackage with modern dh and 3.0 (quilt) style.
+  * Update upstream URL.
+
+ -- Osamu Aoki <osamu@debian.org>  Sun, 27 May 2012 15:33:01 +0900
+
+mecab-ipadic (2.7.0+20070801-3) unstable; urgency=low
+
+  * Create `mecab-ipadic-utf8' package for morphological analysis in UTF-8.
+
+ -- TSUCHIYA Masatoshi <tsuchiya@namazu.org>  Fri, 01 Feb 2008 13:10:20 +0900
+
+mecab-ipadic (2.7.0+20070801-2) unstable; urgency=low
+
+  * Fix the documentation bug to use UTF-8 dictionary.
+  * Fix the packaging bug which fails removing this package.
+  * Fix the packaging bug which fails rebuilding this package.
+
+ -- TSUCHIYA Masatoshi <tsuchiya@namazu.org>  Tue, 15 Jan 2008 22:12:42 +0900
+
+mecab-ipadic (2.7.0+20070801-1) unstable; urgency=low
+
+  * New upstream.
+
+ -- TSUCHIYA Masatoshi <tsuchiya@namazu.org>  Sat, 15 Sep 2007 18:32:35 +0900
+
+mecab-ipadic (2.7.0+20060707-1) unstable; urgency=low
+
+  * New upstream.
+
+ -- TSUCHIYA Masatoshi <tsuchiya@namazu.org>  Sat, 07 Oct 2006 16:28:05 +0900
+
+mecab-ipadic (2.6.1-2) unstable; urgency=low
+
+  * Use new dicrc distributed with mecab-0.79.
+
+ -- TSUCHIYA Masatoshi <tsuchiya@namazu.org>  Sun, 17 Oct 2004 22:26:51 +0900
+
+mecab-ipadic (2.6.1-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- TSUCHIYA Masatoshi <tsuchiya@namazu.org>  Tue, 11 Nov 2003 16:47:35 +0900

@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	@echo "do not execute ./configure"
+	sed -e 's,@basename@,ipadic,g;'      -e 's,@encoding@,EUC-JP,g;' debian/prerm.in    > debian/mecab-ipadic.prerm
+	sed -e 's,@basename@,ipadic,g;'      -e 's,@encoding@,EUC-JP,g;' debian/postinst.in > debian/mecab-ipadic.postinst
+	sed -e 's,@basename@,ipadic-utf8,g;' -e 's,@encoding@,UTF-8,g;'  debian/prerm.in    > debian/mecab-ipadic-utf8.prerm
+	sed -e 's,@basename@,ipadic-utf8,g;' -e 's,@encoding@,UTF-8,g;'  debian/postinst.in > debian/mecab-ipadic-utf8.postinst
+
+override_dh_auto_build:
+	@echo "do nothing for build"

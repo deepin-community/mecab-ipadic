@@ -1,0 +1,3 @@
+*.def usr/share/mecab/dic/ipadic
+dicrc usr/share/mecab/dic/ipadic
+*.csv usr/share/mecab/dic/ipadic

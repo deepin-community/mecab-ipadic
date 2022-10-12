@@ -1,0 +1,2 @@
+debian/*prerm
+debian/*postinst

@@ -1,0 +1,27 @@
+Source: mecab-ipadic
+Section: misc
+Priority: optional
+Maintainer: Natural Language Processing (Japanese) <team+pkg-nlp-ja@tracker.debian.org>
+Uploaders: TSUCHIYA Masatoshi <tsuchiya@namazu.org>,
+           Osamu Aoki <osamu@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+Standards-Version: 4.5.0
+Homepage: https://taku910.github.io/mecab/
+Vcs-Git: https://salsa.debian.org/nlp-ja-team/mecab-ipadic.git
+Vcs-Browser: https://salsa.debian.org/nlp-ja-team/mecab-ipadic
+
+Package: mecab-ipadic
+Architecture: all
+Depends: ${misc:Depends}, mecab-utils (>= 0.93)
+Description: IPA dictionary compiled for Mecab
+ This package provides IPA dictionary converted for Mecab, that is a
+ Japanese morphological analysis system.  This dictionary is organized
+ in the IPA grammar system.
+
+Package: mecab-ipadic-utf8
+Architecture: all
+Depends: ${misc:Depends}, mecab-utils (>= 0.93), mecab-ipadic
+Description: IPA dictionary encoded in UTF-8 compiled for Mecab
+ This package provides IPA dictionary converted for Mecab, that is a
+ Japanese morphological analysis system.  This dictionary is organized
+ in the IPA grammar system.

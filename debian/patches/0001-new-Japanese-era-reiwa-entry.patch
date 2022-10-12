@@ -1,0 +1,17 @@
+From: NOKUBI Takatsugu <knok@daionet.gr.jp>
+Date: Sat, 20 Apr 2019 16:57:44 +0900
+Subject: new Japanese era reiwa entry
+
+---
+ Noun.proper.csv | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Noun.proper.csv b/Noun.proper.csv
+index c805de3..3581fd0 100644
+--- a/Noun.proper.csv
++++ b/Noun.proper.csv
+@@ -27325,3 +27325,4 @@
+ 桃ノ木鼻,1288,1288,8538,名詞,固有名詞,一般,*,*,*,桃ノ木鼻,モモノキハナ,モモノキハナ
+ ドウ坂,1288,1288,3765,名詞,固有名詞,一般,*,*,*,ドウ坂,ドウザカ,ドーザカ
+ 戸城山,1288,1288,8538,名詞,固有名詞,一般,*,*,*,戸城山,トシロヤマ,トシロヤマ
++令和,1288,1288,5904,名詞,固有名詞,一般,*,*,*,令和,レイワ,レイワ
